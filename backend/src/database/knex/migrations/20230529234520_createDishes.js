@@ -4,7 +4,7 @@ exports.up = knex => knex.schema.createTable("dishes", table => {
     table.text("name");
     table.text("description");
     table.varchar("image");
-    table.text("price");
+    table.decimal("price",10,2).NotNullable();
 });
 
 // para deletar tabela
