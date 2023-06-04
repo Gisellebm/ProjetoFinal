@@ -1,11 +1,14 @@
 import { Container } from './styles.js';
-import { Button } from '../../components/Button';
+import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
+
 
 export function Details() {
   return (
     <Container>
-      <h1>Hello World</h1>
-      <Button />
+      <Header />
+      <h1>Details Page</h1>
+      <Footer />
     </Container>
   )
 }
